@@ -1,25 +1,18 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import {Route, Switch} from 'react-router-dom';
+import Login from './view/login';
+import Signup from './view/signup';
+import Main from './view/main';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Hello World
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span>
-            asdfsfaass
-          </span>
-          Learn React
-        </a>
-      </header>
+        <Switch>
+            <Route exact path="/" render={() => <Login />} />
+            <Route path="/signup" render={() => <Signup />} />
+            <Route path="/main" render={() => <Main />} />
+        </Switch>
     </div>
   );
 }
