@@ -1,9 +1,13 @@
 import React from 'react';
+import Nav from '../nav';
+import Category from "../category";
 import './style.scss';
 
 const Main = () => {
     return <div className="main-container">
-        메인 화면
+        <Nav />
+        <Category />
+        <span>메인 화면</span>
     </div>
 }
 
