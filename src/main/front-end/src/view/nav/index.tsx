@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Setting from "../menu/menuList";
 
 const Nav:React.FC = () => {
+    const [settingSwitch, setSettingSwitch] = useState(false);
+
     return <div className="nav-container">
             <section className="logo-section">
                 <img className="nav-logo" src="" alt="" />
@@ -9,8 +12,9 @@ const Nav:React.FC = () => {
                 <input className="search-input" name="search" type="text" placeholder="입력해주세요." />
             </section>
             <section className="setting-section">
-                <span>설정</span>
+                <span onClick={() => setSettingSwitch(!settingSwitch)}>메뉴</span>
             </section>
+        { settingSwitch ? <Setting /> : null }
     </div>
 }
 

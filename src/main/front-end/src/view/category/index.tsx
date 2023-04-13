@@ -1,5 +1,4 @@
 import './style.scss';
-
 const Category = () => {
     return <div className="category-container">
         <li>국어</li>
