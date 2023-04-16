@@ -1,13 +1,15 @@
-package com.exit7.matterService;
+package com.exit7.matterService.hello;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@CrossOrigin("*")
+@RestController
 public class Hello {
 
-    @GetMapping("/")
-    public String startPage() {
-        return "startpage";
+    @GetMapping("/api/hello")
+    public String test() {
+        return "Hello, world!";
     }
 }

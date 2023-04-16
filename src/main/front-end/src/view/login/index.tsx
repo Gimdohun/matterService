@@ -8,7 +8,8 @@ const Login:React.FC = () => {
     const history = useHistory();
     const [loginInput, setLoginInput] = useState({email: "", password: ""});
 
-    return <div className="login-container">
+    return (
+        <div className="login-container">
         <span>깜지 로그인 화면</span>
         <form className="login-form">
             <input
@@ -31,6 +32,7 @@ const Login:React.FC = () => {
 
         </section>
     </div>
+    );
 }
 
 export default Login;
