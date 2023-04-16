@@ -19,10 +19,7 @@ function App() {
     }, []);
   return (
     <div className="App">
-<<<<<<< HEAD
         <p>{hello}</p>
-=======
->>>>>>> 5acffa000571745433a8973a86651878f3db70a9
         <Switch>
             <Route exact path="/" render={() => <Login />} />
             <Route path="/signup" render={() => <Signup />} />
