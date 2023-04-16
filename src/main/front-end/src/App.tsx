@@ -17,7 +17,7 @@ function App() {
             .then(response => console.log(response))
             .catch(error => console.log(error))
     }, []);
-  return (
+  return (//
     <div className="App">
 <<<<<<< HEAD
         <p>{hello}</p>
