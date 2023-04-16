@@ -8,6 +8,7 @@ import Main from './view/main';
 function App() {
   return (
     <div className="App">
+        <span>hi</span>
         <Switch>
             <Route exact path="/" render={() => <Login />} />
             <Route path="/signup" render={() => <Signup />} />
