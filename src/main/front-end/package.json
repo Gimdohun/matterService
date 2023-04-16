@@ -47,5 +47,10 @@
   "devDependencies": {
     "sass": "^1.61.0"
   },
-  "procy" : "http://localhost:8080"
+  "procy": "http://localhost:8080",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
