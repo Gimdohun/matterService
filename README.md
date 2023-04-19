@@ -2,8 +2,5 @@
 
 ## 업데이트
 
-### 23/04/16
- - front-end 카테고리별 컴포넌트 추가.
-   - english view, math view, korean view.
- - menu 컴포넌트 추가.
-   - setting, profile.
+### 23/04/19
+- ADD Post component -> 메인 화면 문제 포스트 생성(테스트 화면)
