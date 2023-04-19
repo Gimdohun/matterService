@@ -10,6 +10,6 @@ public class Hello {
 
     @GetMapping("/api/hello")
     public String test() {
-        return "Hello, world!";
+        return "Hello, world!!!!!@@@@@";
     }
 }
