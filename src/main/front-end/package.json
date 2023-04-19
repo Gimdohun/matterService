@@ -49,5 +49,10 @@
     "webpack": "^5.79.0",
     "webpack-cli": "^5.0.1"
   },
-  "procy": "http://localhost:8080"
+  "procy": "http://localhost:8080",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
