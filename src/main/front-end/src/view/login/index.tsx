@@ -10,7 +10,8 @@ const Login:React.FC = () => {
 
     return (
         <div className="login-container">
-        <span>깜지 로그인 화면</span>
+        <span className="login-titles">깜지</span>
+            <span className="login-sub-titles">깜지 쓰자!</span>
         <form className="login-form">
             <input
                 onChange={e => onChange(e, loginInput, setLoginInput)}
