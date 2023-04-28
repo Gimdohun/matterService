@@ -4,6 +4,7 @@ import Post from "../../post";
 
 const MathView = () => {
     return <div className="math-view-container">
+        <p>Math view</p>
         <Post />
         <Post />
         <Post />

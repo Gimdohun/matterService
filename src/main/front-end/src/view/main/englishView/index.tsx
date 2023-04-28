@@ -1,7 +1,16 @@
 import './style.scss';
+import Post from '../../post';
 
 const EnglishView = () => {
-    return <div className="english-view-container">영어 화면</div>
+    return <div className="english-view-container">
+        <p>English view</p>
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+
+    </div>
 }
 
 export default EnglishView;

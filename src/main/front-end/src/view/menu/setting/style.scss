@@ -1,0 +1,46 @@
+.setting-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .setting-box {
+    padding: 0 40px;
+    border: 1px solid black;
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .setting-info {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      .setting-image {
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+      .setting-meta-info {
+        display: flex;
+        flex-direction: column;
+        span {
+          margin-bottom: 5px;
+        }
+        .setting-name {
+          font-weight: 600;
+          font-size: 20px;
+        }
+        input {
+          width: 200px;
+          height: 30px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .setting-bottom {
+    cursor: pointer;
+  }
+}
