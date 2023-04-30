@@ -5,13 +5,14 @@ import './style.scss';
 const Signup = () => {
     const history = useHistory();
     return <div className="signup-container">
-        <p>회원가입</p>
+        <p className="signup-titles">회원가입</p>
         <form className="signup-form">
             <input name="name" type="text" placeholder="닉네임" />
             <input name="email" type="email" placeholder="이메일" />
             <input name="password" type="password" placeholder="비밀번호" />
             <input name="checkPassword" type="password" placeholder="비밀번호 확인" />
             <input name="introduce" type="text" placeholder="자기소개 한 줄" />
+            <span className="signup-notification">자기소개 외 필수입력사항 입니다.</span>
             <button onClick={() => {
                     alert('회원가입 완료');
                 }

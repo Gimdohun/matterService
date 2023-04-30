@@ -10,7 +10,8 @@ const Login:React.FC = () => {
 
     return (
         <div className="login-container">
-        <span>깜지 로그인 화면</span>
+        <span className="login-titles">깜지</span>
+            <span className="login-sub-titles">깜지 쓰자!</span>
         <form className="login-form">
             <input
                 onChange={e => onChange(e, loginInput, setLoginInput)}
@@ -21,9 +22,10 @@ const Login:React.FC = () => {
                    name="password" type="password" placeholder="password"
             />
             <button onClick={() => {
-                    if (isLogin(loginInput.email, loginInput.password)) {
-                        history.push('/main')
-                    }
+                    // if (isLogin(loginInput.email, loginInput.password)) {
+                    //     history.push('/main')
+                    // }
+                history.push("/main");
                 }
             } type="button" className="login-button">로그인</button>
         </form>

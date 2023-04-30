@@ -4,6 +4,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  .login-titles {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .login-sub-titles {
+    font-size: 18px;
+    color: #828282;
+    margin-bottom: 10px;
+  }
   .login-form {
     display: flex;
     flex-direction: column;
