@@ -1,5 +1,4 @@
 import './style.scss';
-
 import Post from "../../post";
 
 const MathView = () => {

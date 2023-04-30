@@ -1,7 +1,9 @@
 import './style.scss';
 import Nav from '../../nav';
+import { useState } from 'react';
 
 const Profile = () => {
+    const [testSwitch, setTestSwitch] = useState(false);
     return <div className="profile-container">
         <Nav />
         <div className="profile-box">
@@ -15,9 +17,18 @@ const Profile = () => {
             </section>
             <div className="empty-box"></div>
         </div>
-        <section className="profile-post-list">
-            <span>문제 리스트</span>
-
+        <section className="profile-post">
+            <div className="profile-test-category">
+                <p className="ok-test" onClick={() => setTestSwitch(true)}>
+                    맞힌 문제
+                </p>
+                <p className="no-test" onClick={() => setTestSwitch(false)}>
+                    틀린 문제
+                </p>
+            </div>
+            <li className="test-list">
+                <span>{testSwitch ? "맞힌 문제" : "틀린 문제"}</span>
+            </li>
         </section>
     </div>
 }

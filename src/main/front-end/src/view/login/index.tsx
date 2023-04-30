@@ -22,9 +22,10 @@ const Login:React.FC = () => {
                    name="password" type="password" placeholder="password"
             />
             <button onClick={() => {
-                    if (isLogin(loginInput.email, loginInput.password)) {
-                        history.push('/main')
-                    }
+                    // if (isLogin(loginInput.email, loginInput.password)) {
+                    //     history.push('/main')
+                    // }
+                history.push("/main");
                 }
             } type="button" className="login-button">로그인</button>
         </form>

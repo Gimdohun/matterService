@@ -8,6 +8,7 @@ import Main from './view/main';
 import Profile from './view/menu/profile';
 import Setting from './view/menu/setting';
 import MathView from "./view/main/mathView";
+import Test from './view/test';
 
 function App() {
     const [hello, setHello] = useState('')
@@ -28,7 +29,7 @@ function App() {
             <Route path="/main" render={() => <Main />} />
             <Route path="/menu/setting" render={() => <Setting />} />
             <Route path="/menu/profile" render={() => <Profile />} />
-            <Route path="/main/math-view" render={() => <MathView />} />
+            <Route path="/menu-list-name/test" render={() => <Test />} />
         </Switch>
     </div>
   );

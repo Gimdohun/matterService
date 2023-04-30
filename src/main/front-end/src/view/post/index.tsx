@@ -1,9 +1,11 @@
 import './style.scss';
+import { useHistory } from "react-router-dom";
 
 const Post = () => {
+    const history = useHistory();
     return <div className="post-container">
         <div className="map-post-box">
-            <section className="post-info">
+            <section onClick={() => history.push(`/menu-list-name/test`)} className="post-info">
                 <span className="post-title">
                     문제 제목
                 </span>
