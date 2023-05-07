@@ -1,0 +1,50 @@
+.qna-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .qna-form {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    .qna-title-input {
+      width: 50%;
+      height: 30px;
+      margin-bottom: 10px;
+    }
+    .qna-contents-input {
+      width: 50%;
+      height: 70px;
+      margin-bottom: 10px;
+      resize: none;
+    }
+  }
+  .qna-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .qna-logo {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .qna-list-form {
+      width: 60%;
+      height: 50px;
+      border: 1px solid black;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0 10px;
+      .qna-list-form-titles {
+        cursor: pointer;
+        font-size: 18px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

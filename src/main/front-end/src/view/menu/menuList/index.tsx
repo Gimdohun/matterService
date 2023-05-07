@@ -9,6 +9,7 @@ const Setting = () => {
         <li className="menu-list-profile" onClick={() =>
             history.push('/menu/profile')
         }>프로필</li>
+        <li onClick={() => history.push('/menu/qna')}>질문</li>
         <li className="menu-list-set" onClick={() =>
             history.push('/menu/setting')
         }>설정</li>

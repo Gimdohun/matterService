@@ -8,6 +8,7 @@ import Main from './view/main';
 import Profile from './view/menu/profile';
 import Setting from './view/menu/setting';
 import MathView from "./view/main/mathView";
+import Qna from "./view/menu/qna";
 import Test from './view/test';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="/main" render={() => <Main />} />
             <Route path="/menu/setting" render={() => <Setting />} />
             <Route path="/menu/profile" render={() => <Profile />} />
+            <Route path="/menu/qna" render={() => <Qna />} />
             <Route path="/menu-list-name/test" render={() => <Test />} />
         </Switch>
     </div>
