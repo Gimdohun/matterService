@@ -6,29 +6,20 @@ import Login from './view/login';
 import Signup from './view/signup';
 import Main from './view/main';
 import Profile from './view/menu/profile';
-import Setting from './view/menu/setting';
+import UsersUpdate from './view/menu/usersUpdate';
 import MathView from "./view/main/mathView";
 import Qna from "./view/menu/qna";
 import Test from './view/test';
 
 function App() {
-    const [hello, setHello] = useState('')
-
-    // useEffect(() => {
-    //     axios({url: 'http://locahost:8080/api/hello',
-    //         method: 'GET'})
-    //         .then(response => console.log(response))
-    //         .catch(error => console.log(error))
-    // }, []);
   return (
 
     <div className="App">
-        <p>{hello}</p>
         <Switch>
             <Route exact path="/" render={() => <Login />} />
             <Route path="/signup" render={() => <Signup />} />
             <Route path="/main" render={() => <Main />} />
-            <Route path="/menu/setting" render={() => <Setting />} />
+            <Route path="/menu/users-update" render={() => <UsersUpdate />} />
             <Route path="/menu/profile" render={() => <Profile />} />
             <Route path="/menu/qna" render={() => <Qna />} />
             <Route path="/menu-list-name/test" render={() => <Test />} />

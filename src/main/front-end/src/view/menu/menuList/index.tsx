@@ -11,7 +11,7 @@ const Setting = () => {
         }>프로필</li>
         <li onClick={() => history.push('/menu/qna')}>질문</li>
         <li className="menu-list-set" onClick={() =>
-            history.push('/menu/setting')
+            history.push('/menu/users-update')
         }>설정</li>
         <li onClick={() => {
             if (window.confirm("로그아웃 하겠습니까?")) {
