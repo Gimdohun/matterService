@@ -4,3 +4,5 @@
 
 ### 23/04/28
 - Setting & Profile 컴포넌트 추가.
+### 23/05/01
+- isSignup RegExp 추가.

@@ -2,7 +2,7 @@ import './style.scss';
 import {useState} from 'react';
 import Nav from "../../nav";
 
-const Setting = () => {
+const UsersUpdate = () => {
     const [settingSwitch, setSettingSwitch] = useState(false);
     return <div className="setting-container">
         <Nav />
@@ -38,4 +38,4 @@ const Setting = () => {
     </div>
 }
 
-export default Setting;
+export default UsersUpdate;

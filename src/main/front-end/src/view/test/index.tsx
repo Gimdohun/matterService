@@ -1,5 +1,6 @@
 import './style.scss';
 import Nav from "../nav";
+// 해당 문제 보여주는 컴포넌트.
 /*
 * 받아야 할 데이터.
 * 1. 문제번호
