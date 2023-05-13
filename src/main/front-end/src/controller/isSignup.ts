@@ -1,4 +1,5 @@
 import {Users} from "../types";
+import axios from "axios";
 
 const isSignup:Users['isSignupType'] = (name,
                                         email,
@@ -23,6 +24,12 @@ const isSignup:Users['isSignupType'] = (name,
         alert("필수사항을 입력해주세요.");
         return false;
     }
+    axios.post("api/users/signup", {
+        name, email, password, introduce
+    }).then(res => {
+        console.log("회원가입 성공");
+        console.log(res);
+    }).catch(err => console.log(err));
     return true;
 }
 
