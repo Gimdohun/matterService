@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import axios from "axios";
+import React from 'react';
 import './App.scss';
 import {Route, Switch } from 'react-router-dom';
 import Login from './view/login';
@@ -7,7 +6,6 @@ import Signup from './view/signup';
 import Main from './view/main';
 import Profile from './view/menu/profile';
 import UsersUpdate from './view/menu/usersUpdate';
-import MathView from "./view/main/mathView";
 import Qna from "./view/menu/qna";
 import Test from './view/test';
 
