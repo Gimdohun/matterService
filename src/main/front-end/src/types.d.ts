@@ -1,7 +1,7 @@
 import React, { SetStateAction } from "react";
 
 export interface Users {
-    isLoginType: (email: string, password: string) => boolean;
+    isLoginType: (email: string, password: string) => void;
     isSignupType: (name: string,
                    email: string,
                    password: string,

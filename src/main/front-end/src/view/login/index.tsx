@@ -3,6 +3,7 @@ import {useHistory} from "react-router-dom";
 import './style.scss';
 import isLogin from "../../controller/isLogin";
 import onChange from "../../controller/onChange";
+import {getCookie} from "../../common/Cookie";
 
 const Login:React.FC = () => {
     const history = useHistory();
@@ -19,13 +20,16 @@ const Login:React.FC = () => {
             />
             <input
                 onChange={e => onChange(e, loginInput, setLoginInput)}
-                   name="password" type="password" placeholder="password"
+                   name="password" type="text" placeholder="password"
             />
             <button onClick={() => {
-                    if (isLogin(loginInput.email, loginInput.password)) {
-                        history.push('/main')
-                    }
-                history.push("/main");
+                    isLogin(loginInput.email, loginInput.password)
+                if(getCookie("is_login").equal(undefined)){
+                    history.push("/main")
+                }
+                else{
+                    history.push("/")
+                }
                 }
             } type="button" className="login-button">로그인</button>
         </form>
