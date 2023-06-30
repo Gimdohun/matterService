@@ -6,3 +6,6 @@
 - Setting & Profile 컴포넌트 추가.
 ### 23/05/01
 - isSignup RegExp 추가.
+
+### 23/06/30 - 김도훈
+- 로그인 기능 구현완료
